@@ -1,0 +1,118 @@
+==================================================
+       ANÁLISIS DE TIEMPO DE ARRANQUE
+==================================================
+Startup finished in 2.856s (kernel) + 8.856s (initrd) + 18.736s (userspace) = 51.544s
+graphical.target reached after 30.449s in userspace.
+
+==================================================
+    SERVICIOS QUE MÁS DEMORAN EN EL ARRANQUE
+==================================================
+19.722s dev-rfkill.device
+19.722s sys-devices-virtual-misc-rfkill.device
+18.222s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1.0\x2dpart-by\x2dpartnum-1.device
+18.222s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1\x2dpart1.device
+18.222s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1.0\x2dpart1.device
+18.222s dev-disk-by\x2dpartuuid-7502d14b\x2d8711\x2d400e\x2d8a50\x2de1d229d24384.device
+18.222s dev-disk-by\x2ddiskseq-11\x2dpart1.device
+18.222s dev-disk-by\x2did-ata\x2dVBOX_HARDDISK_VB2b9049ec\x2d73433b1c\x2dpart1.device
+18.222s dev-sda1.device
+18.222s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1.0\x2dpart-by\x2dpartuuid-7502d14b\x2d8711\x2d400e\x2d8a50\x2de1d229d24384.device
+18.222s sys-devices-pci0000:00-0000:00:0d.0-ata3-host2-target2:0:0-2:0:0:0-block-sda-sda1.device
+18.113s dev-disk-by\x2dpartuuid-ec809835\x2d5d14\x2d4f6b\x2d9724\x2d7d5711c497f3.device
+18.113s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1.0\x2dpart-by\x2dpartnum-2.device
+18.113s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1.0\x2dpart-by\x2duuid-5504d7bc\x2d4668\x2d47f3\x2d844a\x2df1f2f09cd94a.device
+18.113s dev-disk-by\x2dpath-pci\x2d0000:00:0d.0\x2data\x2d1\x2dpart2.device
+
+==================================================
+   SERVICIOS HABILITADOS EN EL SISTEMA (ENABLED)
+==================================================
+UNIT FILE                              STATE   PRESET
+apparmor.service                       enabled enabled
+apport.service                         enabled enabled
+blk-availability.service               enabled enabled
+chrony.service                         enabled enabled
+cloud-config.service                   enabled enabled
+cloud-final.service                    enabled enabled
+cloud-init-local.service               enabled enabled
+cloud-init-main.service                enabled enabled
+cloud-init-network.service             enabled enabled
+console-setup.service                  enabled enabled
+containerd.service                     enabled enabled
+cron.service                           enabled enabled
+dmesg.service                          enabled enabled
+docker.service                         enabled enabled
+e2scrub_reap.service                   enabled enabled
+finalrd.service                        enabled enabled
+getty@.service                         enabled enabled
+gpu-manager.service                    enabled enabled
+grub-initrd-fallback.service           enabled enabled
+grub2-common.service                   enabled enabled
+kdump-tools.service                    enabled enabled
+keyboard-setup.service                 enabled enabled
+lvm2-monitor.service                   enabled enabled
+ModemManager.service                   enabled enabled
+multipathd.service                     enabled enabled
+netplan-configure.service              enabled enabled
+networkd-dispatcher.service            enabled enabled
+open-iscsi.service                     enabled enabled
+open-vm-tools.service                  enabled enabled
+pollinate.service                      enabled enabled
+rsyslog.service                        enabled enabled
+secureboot-db.service                  enabled enabled
+setvtrgb.service                       enabled enabled
+snapd.apparmor.service                 enabled enabled
+snapd.autoimport.service               enabled enabled
+snapd.core-fixup.service               enabled enabled
+snapd.recovery-chooser-trigger.service enabled enabled
+snapd.seeded.service                   enabled enabled
+snapd.service                          enabled enabled
+snapd.system-shutdown.service          enabled enabled
+sshd-keygen.service                    enabled enabled
+sysstat.service                        enabled enabled
+systemd-networkd-wait-online.service   enabled enabled
+systemd-networkd.service               enabled enabled
+systemd-pstore.service                 enabled enabled
+systemd-resolved.service               enabled enabled
+thermald.service                       enabled enabled
+ua-reboot-cmds.service                 enabled enabled
+ubuntu-advantage.service               enabled enabled
+ubuntu-fan.service                     enabled enabled
+udisks2.service                        enabled enabled
+ufw.service                            enabled enabled
+unattended-upgrades.service            enabled enabled
+vgauth.service                         enabled enabled
+
+54 unit files listed.
+
+==================================================
+    SERVICIOS EN EJECUCIÓN ACTIVA (RUNNING)
+==================================================
+  UNIT                        LOAD   ACTIVE SUB     DESCRIPTION
+  chrony.service              loaded active running chrony, an NTP client/server
+  containerd.service          loaded active running containerd container runtime
+  cron.service                loaded active running Regular background program processing daemon
+  dbus.service                loaded active running D-Bus System Message Bus
+  docker.service              loaded active running Docker Application Container Engine
+  fwupd.service               loaded active running Firmware update daemon
+  getty@tty1.service          loaded active running Getty on tty1
+  ModemManager.service        loaded active running Modem Manager
+  multipathd.service          loaded active running Device-Mapper Multipath Device Controller
+  networkd-dispatcher.service loaded active running Dispatcher daemon for systemd-networkd
+  polkit.service              loaded active running Authorization Manager
+  rsyslog.service             loaded active running System Logging Service
+  ssh.service                 loaded active running OpenBSD Secure Shell server
+  systemd-journald.service    loaded active running Journal Service
+  systemd-logind.service      loaded active running User Login Management
+  systemd-networkd.service    loaded active running Network Management
+  systemd-resolved.service    loaded active running Network Name Resolution
+  systemd-udevd.service       loaded active running Rule-based Manager for Device Events and Files
+  udisks2.service             loaded active running Disk Manager
+  unattended-upgrades.service loaded active running Unattended Upgrades Shutdown
+  upower.service              loaded active running Daemon for power management
+  user@1000.service           loaded active running User Manager for UID 1000
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+22 loaded units listed.

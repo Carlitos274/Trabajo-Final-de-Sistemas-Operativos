@@ -1,0 +1,26 @@
+=== ESTADO DE UFW ===
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), deny (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW IN    Anywhere
+21/tcp                     ALLOW IN    Anywhere
+22/tcp (v6)                ALLOW IN    Anywhere (v6)
+21/tcp (v6)                ALLOW IN    Anywhere (v6)
+
+
+=== PUERTOS Y SOCKETS EN ESCUCHA (ss) ===
+Netid State  Recv-Q Send-Q    Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0            127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=853,fd=18))
+udp   UNCONN 0      0         127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=853,fd=16))
+udp   UNCONN 0      0      10.0.2.15%enp0s3:68         0.0.0.0:*    users:(("systemd-network",pid=1107,fd=30))
+udp   UNCONN 0      0             127.0.0.1:323        0.0.0.0:*    users:(("chronyd",pid=1353,fd=4))
+udp   UNCONN 0      0                 [::1]:323           [::]:*    users:(("chronyd",pid=1353,fd=5))
+tcp   LISTEN 0      4096          127.0.0.1:44429      0.0.0.0:*    users:(("containerd",pid=1402,fd=15))
+tcp   LISTEN 0      4096         127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=853,fd=19))
+tcp   LISTEN 0      4096            0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=1873,fd=3),("systemd",pid=1,fd=103))
+tcp   LISTEN 0      4096      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=853,fd=17))
+tcp   LISTEN 0      4096               [::]:22            [::]:*    users:(("sshd",pid=1873,fd=4),("systemd",pid=1,fd=104))

@@ -1,0 +1,67 @@
+==================================================
+      AUDITORÍA DE PERMISOS Y ALMACENAMIENTO
+==================================================
+
+[1] METADATOS Y PERMISOS DEL DIRECTORIO ACTUAL
+--------------------------------------------------
+  Archivo: .
+  tamaño: 4096          Bloques: 8          ES Bloque: 4096   directory
+Dispositivo: 252,0      Inodo: 539646      Enlaces: 10
+Acceso: (0750/drwxr-x---)  Uid: ( 1000/sebasuser)   Gid: ( 1000/sebasuser)
+Acceso: 2026-07-24 21:49:03.616925073 -0500
+Modificar: 2026-07-24 22:05:01.340992949 -0500
+Cambiar: 2026-07-24 22:05:01.340992949 -0500
+ Nacimiento: 2026-07-18 01:19:33.449289228 -0500
+
+[2] METADATOS DEL DIRECTORIO DE CONFIGURACIÓN
+--------------------------------------------------
+  Archivo: configuracion/
+  tamaño: 4096          Bloques: 8          ES Bloque: 4096   directory
+Dispositivo: 252,0      Inodo: 524316      Enlaces: 2
+Acceso: (0775/drwxrwxr-x)  Uid: ( 1000/sebasuser)   Gid: ( 1000/sebasuser)
+Acceso: 2026-07-24 21:49:38.141545824 -0500
+Modificar: 2026-07-24 22:24:59.330881934 -0500
+Cambiar: 2026-07-24 22:24:59.330881934 -0500
+ Nacimiento: 2026-07-24 21:49:38.141545824 -0500
+
+[3] LISTADO DETALLADO DE ARCHIVOS Y PERMISOS DE LA RAÍZ
+--------------------------------------------------
+total 524388
+drwxr-x---  10 sebasuser sebasuser      4096 Jul 24 22:05 .
+drwxr-xr-x   7 root      root           4096 Jul 19 18:38 ..
+-rw-------   1 sebasuser sebasuser     10671 Jul 24 02:48 .bash_history
+-rw-r--r--   1 sebasuser sebasuser       220 Feb 13 07:16 .bash_logout
+-rw-r--r--   1 sebasuser sebasuser      3773 Jul 23 22:51 .bashrc
+drwx------   2 sebasuser sebasuser      4096 Jul 18 01:43 .cache
+drwx------   4 sebasuser sebasuser      4096 Jul 18 22:48 .config
+-rw-------   1 sebasuser sebasuser        20 Jul 24 02:48 .lesshst
+drwx------   3 sebasuser sebasuser      4096 Jul 19 00:41 .local
+-rw-r--r--   1 sebasuser sebasuser       807 Feb 13 07:16 .profile
+-rw-rw-r--   1 sebasuser sebasuser      1156 Jul 19 00:41 .python_history
+drwx------   2 sebasuser sebasuser      4096 Jul 18 01:38 .ssh
+lrwxrwxrwx+  1 sebasuser sebasuser        22 Jul 19 16:53 acceso_proyecto -> /laboratorio/proyecto1
+-rw-rw-r--   1 sebasuser sebasuser       856 Jul 23 00:09 api.py
+-rw-rw-r--   1 sebasuser sebasuser       727 Jul 23 00:25 api2.py
+-rw-rw-r--   1 sebasuser sebasuser       459 Jul 24 00:34 carga_controlada.py
+drwxrwxr-x   2 sebasuser sebasuser      4096 Jul 24 22:24 configuracion
+drwxrwxr-x   5 sebasuser sebasuser      4096 Jul 22 23:09 env
+-rw-rw-r--   1 sebasuser sebasuser      1893 Jul 24 21:59 firewall.txt
+drwxr-xr-x   2 root      root           4096 Jul 19 16:35 laboratorio
+-rw-rw-r--   1 sebasuser sebasuser      7076 Jul 24 22:05 servicios.txt
+-rw-rw-r--   1 sebasuser sebasuser 536870912 Jul 19 18:22 testfile
+drwx------   2 sebasuser sebasuser      4096 Jul 19 18:04 ~
+
+[4] LISTADO DETALLADO DE LA CARPETA CONFIGURACION/
+--------------------------------------------------
+total 12
+drwxrwxr-x  2 sebasuser sebasuser 4096 Jul 24 22:24 .
+drwxr-x--- 10 sebasuser sebasuser 4096 Jul 24 22:05 ..
+-rw-rw-r--  1 sebasuser sebasuser 2955 Jul 24 22:29 permisos.txt
+
+[5] VERIFICACIÓN DE PERMISOS CRÍTICOS DE SISTEMA
+--------------------------------------------------
+-rw-r--r-- 1 root root   2085 Jul 19 22:48 /etc/passwd
+-rw-r----- 1 root shadow 1395 Jul 19 22:48 /etc/shadow
+
+[6] BÚSQUEDA DE PERMISOS ESPECIALES (SUID/SGID)
+--------------------------------------------------
